@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)https://amechankonabe.github.io/kansou/index.html -->
+<html lang="ja">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <link rel="stylesheet" href="./otorihiki_message_files/otorihiki.css">
+  <title>お取引メッセージ</title>
+</head>
+
+<body>
+  <header>
+    <h1>お取引メッセージジェネレーター</h1>
+    <p>※印付きの選択肢は、生成後に詳細を追記する必要があります。<br>（日付・お取引の種類など）</p>
+  </header>
+
+  <main>
+    <div class="mb-25">
+      <p>1.お取引相手のHN（敬称略）</p>
+      <input type="text" id="dear-name" size="40" maxlength="30" autocomplete="off">
+    </div>
+  
+    <div class="mb-25">
+      <p>2.挨拶文</p>
+      <ul>
+        <li>時間帯：</li>
+        <li>
+          <label><input type="radio" name="time" value="おはようございます。">朝</label>
+          <label><input type="radio" name="time" value="こんにちは、" checked>昼</label>
+          <label><input type="radio" name="time" value="こんばんは、">夕</label>
+        </li>
+      </ul>
+  
+      <ul>
+        <li>挨拶：</li>
+        <li>
+          <label><input type="radio" name="thanks" value="お世話になっております。" checked>お世話</label>
+          <label><input type="radio" name="thanks" value="ご返信ありがとうございます。">ご返信</label>
+          <label><input type="radio" name="thanks" value="ご返信ならびに[]ご確認いただきありがとうございます。">ご確認※</label>
+          <label><input type="radio" name="thanks" value="ご返信ならびに送付先のご提示ありがとうございます。">送付先</label>
+          <label><input type="radio" name="thanks" value="発送のご連絡ありがとうございます。受け取り次第、改めて連絡をさせていただきます。">発送</label>
+        </li>
+      </ul>
+    
+      <ul>
+        <li>オプション（夜分）</li>
+        <li>
+          <select id="yabun">
+            <option value="">なし</option>
+            <option value="夜分遅くに失礼致します。">夜分</option>
+          </select>
+        </li>
+      </ul>
+    </div>
+  
+    <div class="mb-25">
+      <p>3.お取引内容文</p>
+    
+     <ul>
+       <li>返信事項：</li>
+       <li>
+        <label><input type="checkbox" name="torihiki1" value="お写真をご提示いただき、ありがとうございます。そちらで間違いありません。">相手写真提示</label>
+        <label><input type="checkbox" name="torihiki1" value="梱包、発送方法について、承知致しました。">取引方法了承</label>
+        <label><input type="checkbox" name="torihiki1" value="発送日について、承知致しました。">発送日了承</label>
+        <label><input type="checkbox" name="torihiki1" value="到着のご連絡ありがとうございます。無事お届け出来て安心致しました。">相手到着</label>
+      </li>
+     </ul>
+
+     <ul>
+       <li>伝達事項：</li>
+       <label><input type="checkbox" name="torihiki2" value="お品物の画像を添付させていただきます。お手すきの際にご確認いただけますと幸いです。">写真確認要請</label>
+       <label><input type="checkbox" name="torihiki2" value="早くて[]、遅くとも[]までに発送を予定しております。">発送予定日※</label>
+       <label><input type="checkbox" name="torihiki2" value="本日、窓口より発送を致しました。お手元に届きましたら、ご一報いただけますと幸いです。">発送完了報告</label>
+       <label><input type="checkbox" name="torihiki2" value="本日、無事お品物を受け取りました。丁寧に梱包いただき誠にありがとうございます。">当方到着</label>
+     </ul>
+    </div>
+  
+  
+  
+     <div class="mb-25">
+       <p>4.結びの挨拶</p>
+        <ul>
+          <li>
+            <label><input type="checkbox" name="musubi" value="特に問題なければ、ご返信は不要です。">返信不要</label>
+            <label><input type="checkbox" name="musubi" value="折返し、送付先のご提示をお願い致します。">送付先要求</label>
+            <label><input type="checkbox" name="musubi" value="お手すきの際にご確認いただけますと幸いです">お手すき</label>
+            <label><input type="checkbox" name="musubi" value="ご不明点等ありましたらいつでもご連絡ください。">ご不明点</label>
+            <label><input type="checkbox" name="musubi" value="長期となりますが、何卒">長期初回</label>
+            <label><input type="checkbox" name="musubi" value="それでは、発送が完了次第、改めて連絡をさせていただきます。">発送完了次第連絡</label>
+            <label><input type="checkbox" name="musubi" value="引き続き、到着のご連絡をお待ちしております。">到着連絡待ち</label>
+            <label><input type="checkbox" name="musubi" value="こちらこそ、この度はお取引いただき/長期のお取引/貴重なお品物をお譲り/交換いただき誠にありがとうございました。">取引完了挨拶※</label>
+          </li>
+        </ul>
+     </div>
+  
+    <div class="mb-25">
+      <p>5.引き続きor最終挨拶</p>
+        <ul>
+          <li>
+            <label><input type="radio" name="continue" value="">返信不要</label>
+            <label><input type="radio" name="continue" value="引き続き">引き続き</label>
+            <label><input type="radio" name="continue" value="またの機会がありましたら、">最終</label>
+          </li>
+        </ul>
+    </div>
+  
+    <p>
+      <input class="btn" id="btn" type="button" value="入力" onclick="getValue();"> 
+      <input class="btn" type="button" value="コピー" onclick="copyClipBoad()"> 
+<!--       <input class="btn" type="button" value="リセット" onClick="clearContent()">
+ -->    </p>
+    <div id="result-area">
+      <p><textarea id="sentenceArea" rows="20"></textarea></p>
+    </div>
+    <br>
+  </main>
+  
+  <footer>
+    <div id="tyuui">
+      <ul>
+        <li>個人の私的用途にのみお使いください。</li>
+        <li>改変出来る方はデータを取ってローカルでカスタマイズすると楽なのかなと思います。</li>
+        <li>趣味で作ったので改良等を期待しないでください。</li>
+        <li>生成した文章はリロードすると消えるので、メモ帳かなにかにコピペして使うと良いかと思います。</li>
+        <li>当ジェネレーターを使用したことによる不利益や損害等、あらゆる影響に製作者は一切責任は取れません。</li>
+      </ul>
+    </div>
+    <script src="./otorihiki_message_files/otorihiki.js"></script>
+  </footer>
+
+</body>
+
+</html>
