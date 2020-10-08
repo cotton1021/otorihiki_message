@@ -6,8 +6,9 @@ body {
   margin-right: auto;
   margin-left : auto;
 }
-main {
-  padding: 1rem
+.main_content {
+  margin: 0.5rem;
+  padding: 0.5rem
 }
 
 main p, main label, main li {
@@ -58,4 +59,14 @@ label {
 
 #sentenceArea {
   width: 95%;
+}
+
+.tab_content {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.result_area{
+  padding: 0.5rem
 }
