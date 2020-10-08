@@ -1,5 +1,14 @@
 'use strict';
 
+
+function AllChecked(){
+  var check =  document.form.checkListT.checked;
+
+  for (var i=0; i<document.form.trade.length; i++){
+    document.form.trade[i].checked = check;
+  }
+}
+
 function getValue() {
 
   //文字系読み込み
@@ -9,7 +18,7 @@ function getValue() {
   //ラジオボタンの項目すべてのname値を指定
   var radioButton = ['time', 'thanks', 'continue','musubi2'];
   //チェックボックスの項目すべてのname値を指定
-  var checkBox = ['torihiki1', 'torihiki2', 'musubi1'];
+  var checkBox = ['torihiki1', 'torihiki2', 'musubi1','syokai'];
 
   //ラジオボタンの項目の数だけループ…i<xのxは項目の数を指定（以下のチェックボックスも同様）
   for (var i = 0; i < 4; i++) {
@@ -25,7 +34,7 @@ function getValue() {
   }
 
   //チェックボックスの項目の数だけループ。チェックが複数あれば改行して追加
-  for (var i = 0; i < 3; i++) {
+  for (var i = 0; i < 4; i++) {
     var boxes = document.getElementsByName(checkBox[i]);
     var result = ""
 
@@ -59,6 +68,9 @@ function getValue() {
   }
   if (checkBox[1] != "") {
     sentence += checkBox[1] + '\n';
+  }
+  if (checkBox[3] != "") {
+    sentence += checkBox[3] + '\n';
   }
   if (checkBox[2] != "") {
     sentence += checkBox[2] + '\n';
