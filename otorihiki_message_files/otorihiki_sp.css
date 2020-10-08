@@ -70,3 +70,7 @@ label {
 .result_area{
   padding: 0.5rem
 }
+
+.tab_label{
+  padding: 0.4rem 1rem;
+}
