@@ -3,8 +3,10 @@ body {
   background-image: linear-gradient(120deg, #65bcc2 0%, #8cc9eb 50%, #4774b3 100%);
   color: #ffffff;
 }
-main {
+.main_content {
   background-color: #c2c2b962;
+  border: 2px solid #dbe0d9a9;
+  border-radius: 5px;
 }
 
 .btn {
@@ -31,5 +33,49 @@ ul {
 
 #sentenceArea {
   background-color: #8ccaeb44;
-  border: solid #dbe0d9a9;
+  border-radius: 5px;
+  border: 2px solid #dbe0d9a9;
+}
+
+/* タブ */
+
+.tab {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.tab_label {
+  color: #fff;
+  background: transparent;  
+  margin-right: 0.5rem;
+  padding: 0.2rem 1rem;
+  order: -1;
+  cursor: pointer;
+  border: 2px solid #dbe0d9a9;
+  border-bottom: 0;
+  border-radius: 10px 10px 0 0;
+  position: relative;
+  bottom: -8px;
+  right: -16px;
+}
+
+.tab_content {
+  width: 100%;
+  display: none;
+  border: 2px solid #dbe0d9a9;
+  padding: 16px; 
+  background-color: #c2c2b962;
+}
+
+.tab_switch {
+  display: none; 
+}
+
+.tab_switch:checked + .tab_label {
+  background-color: #c2c2b962;
+}
+
+.tab_switch:checked + .tab_label + .tab_content {
+  display: block; 
 }
