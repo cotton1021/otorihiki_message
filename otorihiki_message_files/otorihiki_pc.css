@@ -4,10 +4,11 @@ body {
     margin-right: auto;
     margin-left : auto;
   }
-  main {
-    padding: 1rem 2rem;
+  .main_content {
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 1rem;
   }
-  
+    
   .btn {
     width: 94px;
     padding: 3px 20px;
@@ -51,4 +52,15 @@ body {
   
   #sentenceArea {
     width: 80%;
+    border-radius: 5px;
+  }
+
+  .tab_content{
+    padding: 0.5rem 1rem;
+    border-radius: 0px 5px 5px;
+    margin: 0.5rem 1rem;
+  }
+
+  .result_area{
+    margin: 0.5rem 1rem;
   }
