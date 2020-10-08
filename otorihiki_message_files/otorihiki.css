@@ -78,3 +78,17 @@ ul {
 .tab_switch:checked + .tab_label + .tab_content {
   display: block; 
 }
+
+/* チェック */
+
+.kakunin p {
+  display: inline-block;
+}
+
+.kakunin ul {
+  margin: auto;
+}
+
+.kakunin input:checked + p {
+  color: #c2c2b9;
+}
