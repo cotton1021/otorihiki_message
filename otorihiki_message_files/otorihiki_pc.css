@@ -64,3 +64,7 @@ body {
   .result_area{
     margin: 0.5rem 1rem;
   }
+
+  .tab_label{
+    padding: 0.2rem 1rem;
+  }
