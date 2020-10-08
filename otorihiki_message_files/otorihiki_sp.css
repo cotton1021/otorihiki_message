@@ -74,3 +74,8 @@ label {
 .tab_label{
   padding: 0.4rem 1rem;
 }
+
+/* チェック */
+.kakunin ul input {
+  margin-left: 16px;
+}
