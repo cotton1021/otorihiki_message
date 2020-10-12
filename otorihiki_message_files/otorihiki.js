@@ -16,12 +16,12 @@ function getValue() {
   var yabunInput = document.getElementById('yabun').value;
 
   //ラジオボタンの項目すべてのname値を指定
-  var radioButton = ['time', 'thanks', 'continue','musubi2'];
+  var radioButton = ['time', 'thanks', 'continue'];
   //チェックボックスの項目すべてのname値を指定
   var checkBox = ['torihiki1', 'torihiki2', 'musubi1','syokai'];
 
   //ラジオボタンの項目の数だけループ…i<xのxは項目の数を指定（以下のチェックボックスも同様）
-  for (var i = 0; i < 4; i++) {
+  for (var i = 0; i < 3; i++) {
     var radios = document.getElementsByName(radioButton[i]);
     radioButton[i] = "";
 
@@ -74,9 +74,6 @@ function getValue() {
   }
   if (checkBox[2] != "") {
     sentence += checkBox[2] + '\n';
-  }
-  if (radioButton[3] != "") {
-    sentence += radioButton[3] + '\n';
   }
   if (radioButton[2] != "") {
     sentence += radioButton[2] + 'よろしくお願いいたします。';
