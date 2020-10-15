@@ -71,6 +71,16 @@ body {
     padding: 0.2rem 1rem;
   }
 
+  /* 初回 */
+
+  .syokai_box {
+    display: flex;
+  }
+
+  .syokai_con {
+    margin-right: 10%;
+  }
+
 /* チェック */
 
 @media screen and (min-width:1024px) {

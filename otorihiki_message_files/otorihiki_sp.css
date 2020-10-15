@@ -75,6 +75,15 @@ label {
   padding: 0.4rem 1rem;
 }
 
+/* 初回 */
+.syokai_box {
+  display: inline-block;
+}
+
+.syokai_con {
+  margin-top: 25%;
+}
+
 /* チェック */
 .kakunin ul input {
   margin-left: 16px;

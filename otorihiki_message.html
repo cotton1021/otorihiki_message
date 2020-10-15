@@ -104,6 +104,44 @@
       <div class="tab_content">
         <div class="mb-25">
           <p>3.DM初回連絡</p>
+          <div class="syokai_box">
+            <div class="syokai_con">
+              <ul>
+                <li>交換</li>
+                <li><label><input type="checkbox" id="check_list_t" name="check_list_t">一括選択</label></li>
+              </ul>
+              <ul>
+                <li>
+                  <label><input type="checkbox" name="syokai" value="この度は[]の交換、誠にありがとうございます。">お品物確認</label>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <label><input type="checkbox" name="syokai" class="trade"
+                      value="お品物は[]で梱包をし、[]発送を予定しております。梱包、発送方法にご希望ありましたら、ご連絡ください。">梱包発送方法</label>
+                </li>
+              </ul>
+            </div>
+            <div class="syokai_con">
+              <ul>
+                <li>譲渡</li>
+                <li><label><input type="checkbox" id="check_list_t" name="check_list_t">一括選択</label></li>
+              </ul>
+              <ul>
+                <li>
+                  <label><input type="checkbox" name="syokai" value="この度は[]をお迎えいただき、誠にありがとうございます。">お品物確認</label>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <label><input type="checkbox" name="syokai" class="trade"
+                      value="お品物は[]で梱包をし、[]発送を予定しております。梱包、発送方法にご希望ありましたら、ご連絡ください。">梱包発送方法</label>
+                      <label><input type="checkbox" name="syokai" class="zyoto" value="振込先は[]を提示させていただきます。">振込先情報</label>
+                    </li>
+              </ul>
+            </div>
+          </div>
+<!-- 
           <ul style="color:#9aa7a7;">
             <li>一括選択（未実装）：</li>
             <li>
@@ -127,7 +165,8 @@
               <label><input type="checkbox" name="syokai" class="zyoto" value="振込先は[]を提示させていただきます。">振込先情報</label>
             </li>
           </ul>
-        </div>
+
+ -->        </div>
       </div>
 
       <input id="tab3" type="radio" name="tabs" class="tab_switch" />
